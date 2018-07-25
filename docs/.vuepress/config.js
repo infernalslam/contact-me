@@ -1,4 +1,4 @@
 module.exports = {
-  title: 'Hello Gopher!',
+  title: 'Golang with beginner',
   description: 'Just playing around'
 }

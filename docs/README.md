@@ -4,11 +4,11 @@ heroImage: /gopher.png
 actionText: Get Started →
 actionLink: /guide/
 features:
-- title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2018-present Evan You
+- title: Powerful
+  details: ภาษา Go เป็นโอเพ่นซอร์สที่ทำให้โปรแกรมเมอร์มีประสิทธิผลมากขึ้น
+- title:  Go styles
+  details: กระชับสะอาดและมีประสิทธิภาพ ง่ายต่อการเขียน
+- title: Unit test
+  details: เขียน test ง่ายไม่ต้องเช็ตอัพอะไรให้ยุ่งยาก
+footer: ภาษา Golang เขียนเถอะ ชีวิตจะดีขึ้น
 ---
