@@ -1,5 +1,6 @@
 ---
 home: true
+title: Golang with beginner
 heroImage: /gopher.png
 actionText: Get Started →
 actionLink: /guide/
