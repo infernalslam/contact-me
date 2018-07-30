@@ -3,7 +3,7 @@ home: true
 title: Golang with beginner
 heroImage: /gopher.png
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /guide/guideline
 features:
 - title: Powerful
   details: ภาษา Go เป็นโอเพ่นซอร์สที่ทำให้โปรแกรมเมอร์มีประสิทธิผลมากขึ้น

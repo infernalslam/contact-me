@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Golang with beginner',
+  title: 'Go อินเตอร์',
   description: 'Just playing around',
   themeConfig: {
     nav: [
