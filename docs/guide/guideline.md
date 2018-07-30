@@ -15,43 +15,44 @@ meta:
 - [Unix systems](#unix-systems)
   * [Bash](#bash)
   * [Zsh](#zsh)
-  * [fish](#fish)
+  * [Fish](#fish)
 - [Windows](#windows)
 
 # Unix systems
 
-โดยทั่วไปเมื่อติดตั้ง Golang ในระบบ Unix จะถูกกำหนดไว้ที่ `$HOME/go` เพื่อเป็นค่าเริ่มต้น
+โดยทั่วไปเมื่อติดตั้ง Golang ในระบบ Unix จะถูกกำหนดไว้ที่ `$HOME/go` เพื่อเป็นค่าเริ่มต้น โดยเรามสามารถเซ็ทไว้เพื่อความสะดวกในการทำงานอย่างอื่นได้ในอนาคต
 
 ## Bash
 
-Edit your `~/.bash_profile` to add the following line:
+เข้าไปแก้ไขไฟล์ `~/.bash_profile` เเละเพิ่มคำสั่งทางด้านหลังลงไป
+
 ```bash
 export GOPATH=$HOME/go
 ```
 
-Save and exit your editor. Then, source your `~/.bash_profile`.
+บันทึกเเล้วทำการรันคำสั่ง source ที่ไฟล์  `~/.bash_profile` 
 ```bash
 source ~/.bash_profile
 ```
 
-> Note: Set the GOBIN path to generate a binary file when `go install` is run.
+> หมายเหตุ: การเซ็ท path อย่าลืมเช็ท GOBIN PATH ในกรณีที่ต้องการ generate a binary เมื่อรัน `go install` 
 > ```bash
 > export GOBIN=$HOME/go/bin
 > ```
 
 ## Zsh
-
-Edit your `~/.zshrc` file to add the following line:
+เข้าไปแก้ไขไฟล์ `~/.zshrc` เเละเพิ่มคำสั่งทางด้านหลังลงไป
 
 ```bash
 export GOPATH=$HOME/go
 ```
-Save and exit your editor. Then, source your `~/.zshrc`.
+บันทึกเเล้วทำการรันคำสั่ง source ที่ไฟล์  `~/.zshrc` 
+
 ```bash
 $ source ~/.zshrc
 ```
 
-## fish
+## Fish
 
 ```bash
 set -x -U GOPATH $HOME/go
@@ -68,23 +69,17 @@ set -x -U GOBIN $GOPATH/bin
 
 # Windows
 
-Your workspace can be located wherever you like,
-but we'll use `C:\go-work` in this example.
+คุณสามารถติดตั้ง Golang ได้ทุกที่ที่คุณต้องการ
+แต่เราจะใช้ `C: \ go-work` ในตัวอย่างนี้
 
-__NOTE:__ that `GOPATH` must not be the same path as your Go installation.
 
-* Create folder at `C:\go-work`.
-* Right click on "Start" and click on "Control Panel". Select "System and Security", then click on "System".
-* From the menu on the left, select the "Advanced systems settings".
-* Click the "Environment Variables" button at the bottom.
-* Click "New" from the "User variables" section.
-* Type `GOPATH` into the "Variable name" field.
-* Type `C:\go-work` into the "Variable value" field.
-* Click OK.
+__NOTE:__ `GOPATH` ต้องไม่เป็น PATH เดียวกันกับการติดตั้ง Go ของคุณ
 
-## Windows 10
-There is a faster way to edit `Environment Variables` with search
-* Left click on "Search" and type `env` or `environment`. select `Edit environment variables for your account`
-* and follow step above
-
-...
+* สร้างโฟร์เดอร์ที่  `C:\go-work`.
+* คลิกขวาที่ปุ่ม "Start" เเละคลิกเลือก "Control Panel". เลือก "System and Security", หลังจากนั้นคลิก "System".
+* จะมีเมนูปรากฏบนมุมบนซ้ายมือ , เลือกไปที่ "Advanced systems settings".
+* คลิกที่ "Environment Variables" ที่อยู่ข้างล่าง.
+* คลิก "New" เเละเลือก "User variables" .
+* สร้าง Type `GOPATH` ที่ช่อง "Variable name".
+* สร้าง Type `C:\go-work` ที่ช่อง "Variable value".
+* คลิก OK.
