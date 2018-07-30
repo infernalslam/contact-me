@@ -7,8 +7,13 @@ module.exports = {
       { text: 'เริ่มต้น', link: '/guide/' },
       { text: 'golang', link: 'https://golang.org/doc/' },
     ],
-    sidebar: {
-      '/guide/': ['']
-    }
+    sidebar: [
+      '/',
+      '/guide/guideline',
+      '/guide/page2',
+      '/guide/page3',
+      '/guide/page4',
+      '/guide/page5'
+    ]
   }
 }
